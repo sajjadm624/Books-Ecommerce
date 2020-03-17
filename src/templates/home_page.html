@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+<title>Home Page Template</title>
+
+{% block base_head %}
+<link rel='stylesheet' href='{% static "css/main.css" %}' >
+{% endblock %}
+
+{% block content %}
+<div class='text-center'>
+    <h1 style="color: black;">{{ title }}</h1>
+    <h1></h1>
+</div>
+
+<div class='text-center'>
+  <div class='col'>
+      <p>{{ content }}</p>
+  </div>
+</div>
+
+{% if request.user.is_authenticated %}
+<div class='text-center'>
+  <div class='col'>
+  <h1>{{ premium_content }}</h1>
+  </div>
+</div>
+{% endif %}
+
+<main>
+
+    <div class="view jarallax" style="height: 50vh;">
+      <img class="jarallax-img" src="https://i.pinimg.com/originals/66/10/e4/6610e4e08bbc1fed9313cda36e2993a7.jpg" height="750px" width="1200px" alt="">
+      <div class="mask rgba-blue-slight">
+        <div class="container flex-center text-center">
+          <div class="row mt-5">
+            <div class="col-md-12 col-xl-8 mx-auto wow fadeIn">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row my-0 py-0">
+
+        <!--Grid column-->
+        <div class="col-md-12 text-center">
+
+          <p align="justify" style="color: white;">বই পড়া যে শিক্ষিত মানুষের একটা বৈশিষ্ট্য সে বিষয়ে দেশে-বিদেশে কারোরই দ্বিমত থাকার কথা নয়। একালে অনেক বড় লোকের বাড়িতে তাকে সুন্দর করে বই সাজিয়ে রাখাকে অনেকে কটাক্ষ করেন কিন্তু বাড়িতে বই রাখা যদি ফ্যাশন হয় তবে সেই ফ্যাশনকেও আমরা শ্রদ্ধার সঙ্গে মেনে নেব। আজকের পৃথিবীতে এ কথা সবাই জেনে গেছে, যে জাতি যত বেশি বই পড়ে সে জাতি তত বেশি শিক্ষিত ও সংস্কৃতিবান হয়। এ কথা তো জানা যে, সাহিত্যচর্চা এক নির্মল আনন্দ। ব্যাপক অর্থে বলা যায়, সাহিত্যচর্চা না করলে মানুষ আনন্দ থেকে বঞ্চিত থাকে। তার ভিতরকার সুকুমার বৃত্তিগুলো বিকশিত হতে পারে না। মানবিকতার প্রতি টান রুদ্ধ হয়ে যায়।
+বই পড়ার জন্য পৃথিবীর সব দেশেই লাইব্রেরি গড়ে ওঠে। পাড়ায় পাড়ায় যেমন লাইব্রেরি থাকে তেমনি বৃটিশ মিউজিয়াম বা আমাদের ন্যাশনাল লাইব্রেরি, বঙ্গীয় সাহিত্য পরিষদ গ্রন্থাগার কিংবা এশিয়াটিক সোসাইটির লাইব্রেরির মতো বৃহৎ লাইব্রেরি এবং গবেষণাগার সরকারি-বেসরকারি ব্যবস্থাপনায় গড়ে ওঠা আধুনিক সভ্য সমাজে একটা বিশাল দপ্তর হয়ে উঠেছে। ব্যক্তিগতভাবে বই কিনে নিজের মতো লাইব্রেরি গড়ে তোলা অনেকেরই শখ। অধ্যাপক আবুল ফজল এই লাইব্রেরিকেই ‘মনের হাসপাতাল’ বলে অভিহিত করেছেন। তিনি আরো বলেছেন, এর স্থান স্কুলের অনেক উপরে। এ কথা সহজে জানা, পাস হওয়া মানে শিক্ষিত হওয়া নয়। সুশিক্ষিত মানেই স্বশিক্ষিত। মনকে সতেজ রাখে সাহিত্য পাঠ, স্বাভাবিকভাবেই নতুন প্রজন্মকে গ্রন্থাগারমুখী করে তোলা দেশের সুস্থ নাগরিকদের সামাজিক কর্তব্য। আমরা একালে বড়রা এ কাজটা সঠিকভাবে করতে পারি না বলেই আমাদের বংশধররা ক্রমান্বয়ে গ্রন্থবিমুখ হয়ে পড়েছে। অনেকে বলবেন, এ জন্য টেলিভিশনের একটা নিরর্থক ভূমিকা আছে। কথাটা পুরো সত্য নয়। কোনো শিশুকে শৈশব থেকে গ্রন্থমুখী করে তুললে কোনো ইলেকট্রনিক মিডিয়ার সাধ্য নেই যে তাকে গ্রন্থবিমুখ করে তোলে। ইউরোপে দেখেছি দুই-তিন বছর বয়সের শিশু নার্সারি স্কুলে যায়। সেখানে খেলার ছলে বর্ণ পরিচয় ও শব্দ ভান্ডার বাড়ানোর সঙ্গে সঙ্গে তাদের হাতে তুলে দেয়া হয় রং আর তুলি। ইচ্ছা মতো তারা রং আর তুলি নিয়ে চুবিয়ে চুবিয়ে তার কল্পনার বর্ণময় রূপগুলো কাগজে তুলে ধরতে থাকে। সপ্তাহে দুই দিন তাদের একটা করে বই বাড়িতে আনতে দেওয়া হয়। এভাবে বুক সেলফ থেকে বই নিতে নিতে এমন একটা অভ্যাস তৈরি হয় যে, আগে নেওয়া কোনো বই শিশু কখনো বাড়ি নিয়ে যায় না। যে শিশুর বর্ণ পরিচয় হয়নি সে বই বাড়িতে নিয়ে গিয়ে কী করবে, এ কথা মনে হওয়া স্বাভাবিক কিন্তু ভাবলেই বোঝা যাবে সপ্তাহে দুবার করে বাড়িতে বই নিয়ে যাওয়া একটা অভ্যাস তৈরি করে দেয়। শিশু বাড়িতে ছবি দেওয়া গল্পের বইগুলো বাবা-মাকে দিয়ে পড়িয়ে গল্পরস আস্বাদ করে থাকে। পড়তে শিখলে আগ্রহে নিজেই বই পড়তে থাকে। এই পঠন অভ্যাস দ্বারাই একটা জাতি তৈরি হয় ধীরে ধীরে।</p>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+
+    <div class="container">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 text-center">
+
+          <h2 class="h1 font-weight-bold pink-text my-5 py-4" style="color: black">বই কিনোতে আপনি যা পাচ্ছেন</h2>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+
+    <div class="grey lighten-4">
+
+      <div class="container pt-5">
+        <p align="justify" style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="jarallax-keep-img float-md-left mr-md-4 mb-4 mb-md-0" data-speed="0.5">
+            <img class="jarallax-img" src="https://www.bookrackjackson.com/assets/images/block/BOOKS.jpg" alt="" width="400">
+        </div>
+
+        <p align="justify" style="color: black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <p align="justify" style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
+
+        <div class="jarallax-keep-img float-md-right ml-md-4 mb-4 mb-md-0" data-speed="0.8">
+            <img class="jarallax-img" src="https://img.freepik.com/free-photo/books-randomly-stacked-shelf_23-2147846041.jpg?size=626&ext=jpg" alt="" width="400">
+        </div>
+
+        <p class="mb-0 pb-5" align="justify" style="color: black">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae. Agni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea quibusdam et voluptate velit esse quam nihil ex minus id quod.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+{% endblock %}
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel='stylesheet' href='{% static "css/main.css" %}' >
+    </head>
+    <body>
+      <div class='text-center'>
+          <h1>{{ title }}</h1>
+          <h1>Buy,Read,Grow</h1>
+      </div>
+      <div class='container'>
+        <div class='row'>
+          <div class='col'>
+              <img src="{% static 'img/beach.jpg' %}" class='img-fluid' />
+              <p>{{ content }}</p>
+          </div>
+        </div>
+        {% if request.user.is_authenticated %}
+        <div class='row'>
+          <div class='col'>
+          <h1>Premium</h1>
+          {{ premium_content }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
+  </html>
